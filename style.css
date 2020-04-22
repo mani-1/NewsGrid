@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.4;
+    font-family: 'Lato', sans-serif;
+}
+:root {
+    --primary-color: #c72727;
+    --secondary-color: #f99500;
+    --light-color: #f3f3f3;
+    --dark-color: #333;
+    --max-width: 1100px;
+    --sports-color: #f99500;
+    --ent-color: #a66bbe;
+    --tech-color: #009cff;
+}
+.container {
+    max-width:  var(--max-width);
+    margin: auto;
+    padding: 1rem;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+header img {
+    width: 180px;
+}
+header  {
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+header a {
+    display: inline-block;
+    text-decoration: none;
+ 
+}
+ 
+.external-link i{
+    color:  #333;
+    margin: 0px 3px;
+}
+.head-logo {
+    text-align: left;
+}
+.header-grid {
+    display: grid;
+    grid-template-columns:2fr 1fr 1fr;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+.btn {
+    display: inline-block;
+    background-color: #c72727;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+}
+.btn:hover{
+    background-color: #f3f3f3;
+    color: black;
+}
+.btn-light {
+    color: black;
+    background-color: white;
+}
+
+/* ******************** sports article *********************** */
+
+.sports-article {
+    background:linear-gradient(rgba(43, 43, 43, 0.514),rgba(41, 41, 41, 0.507)) ,
+    url(img/featured.jpg) no-repeat center center/cover;
+    color: white;
+   height: 415px;
+   padding: 1rem;
+}
+
+.sports-article  .sport-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+   height: 100%;
+  
+}
+
+.sports-article h1 {
+    font-family: 'Staatliches', cursive;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.sports-article p {
+    margin-bottom: 15px;
+}
+ .y-btn {
+     display: inline-block;
+     padding:.4rem .6rem;
+    font-size: .60rem;
+    color: white;
+     background-color: var(--secondary-color);
+     border-radius: 10px;
+     margin-bottom: 10px;
+     text-transform: uppercase;
+ }
+.btn-dark2{
+
+    padding: 8px 24px;
+}
+ .btn-dark2:hover {
+     opacity:.94;
+     background-color: var(--primary-color);
+     color: white;
+ }
+
+
+ /* ******************** editor article *********************** */
+ 
+
+.editor-picks {
+    background-color: var(--light-color);
+    padding-bottom: 2rem;
+}
+.editor-box {
+    background-color: white;
+    padding: 1rem;
+}
+.editor-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+ 
+}
+.editor-box1 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1rem;
+    grid-column: 1 /span 2;
+    align-items: center;
+    
+}
+.editor-box7 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 1rem;
+    grid-column: 2 / span 2;
+    align-items: center;
+}
+ 
+.editor-picks h3 {
+      font-weight: bold;
+      font-family: 'Staatliches', cursive;
+      text-transform: uppercase;
+      font-size: 1.8rem;
+      padding: 1rem 0px;
+  }
+.editor-box6 {
+   background-color: #c72727;
+   color: white;
+   padding-top: 3rem;
+}
+.editor-box2 {
+    background-color: #333;
+    color: white;
+    padding-top:3rem;
+}
+  .editor-grid h1 ,footer h1,.read-section h1 {
+    font-family: 'Staatliches', cursive;
+    font-weight: bold;
+    font-size: 1.1rem;
+   
+  }
+  .editor-grid p , footer p {
+      font-size: 1rem;
+      line-height: 1.6;
+  }
+  .editor-grid img {
+    width: 100%;
+}
+
+.v-btn {
+    display: inline-block;
+    padding:.4rem .6rem;
+   font-size: .60rem;
+   color:  white;
+    background-color:var(--ent-color);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+   
+ 
+ .b-btn {
+    display: inline-block;
+    padding:.4rem .6rem;
+   font-size: .60rem;
+   color: white;
+    background-color:  var(--tech-color);
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}  
+
+ /* ******************** about html *********************** */
+.about {
+    background-color: var(--light-color);
+    padding: 1rem;
+}
+
+ .about-grid {
+     display: grid;
+     grid-template-columns: 2fr .6fr;
+     grid-gap: 1rem;
+     
+     padding: 1rem;
+ }
+ .about-right {
+     grid-row: 1 / span 4;
+     background-color: white;
+     padding: 1rem;
+ }
+.about-grid  .about-left{
+    background-color: #c72727;
+   color: white;
+   padding: 1rem;
+ 
+}
+.about .btn {
+    display: inline-block;
+    background-color: var(--dark-color);
+    color: white;
+     width: 100%;
+    margin: 10px auto;
+    text-align: center;
+
+}
+.about h1 {
+    font-size: 3rem;
+    font-family: 'Staatliches', cursive;
+    padding: 1rem;
+}
+.about p {
+    padding: 1rem;
+}
+.about h2 {
+    font-family: 'Staatliches', cursive;
+
+}
+
+ /* ******************** Read section*********************** */
+.read-section {
+    background-color: var(--light-color);
+}
+.read-content {
+    display: grid;
+    grid-template-columns: 2fr .8fr;
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+.read-right img{
+  width: 100%;
+}
+
+.read-right {
+    grid-row: 1 /span 3;
+    background-color: white;
+    padding: 1rem;
+}
+.read-left {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    color: white;
+    line-height: 1.5;
+ 
+}
+.read-left h2, .read-nav-sec h2 {
+    font-family: 'Staatliches', cursive;
+    text-transform: uppercase;
+}
+.read-left a {
+    background-color: var(--dark-color);
+    width: 100%;
+    text-align: center;
+}
+.read-left p {
+    margin-bottom: 10px;
+}
+.read-section h1 {
+    font-size: 3rem;
+}
+.read-nav-sec {
+    background-color: white;
+    padding: 1rem;
+}
+.read-nav {
+    list-style: none;
+ 
+}
+.read-nav li {
+    border-bottom:1px dotted var(--dark-color);
+    margin: 10px ;
+    padding: .3rem;
+}
+.read-nav i {
+    margin-right: 3px;
+}
+.highlight {
+    background-color: var(--light-color);
+    display: grid;
+    grid-template-columns: 3fr .1fr;
+    align-items: center;
+    padding: 10px;
+}
+.highlight a {
+    margin: 0px;
+}
+
+
+ /* ******************** footer *********************** */
+
+ footer {
+     background-color: var(--dark-color);
+     padding: 1rem;
+    
+ }
+ footer img {
+     width: 180px;
+ }
+footer li {
+    list-style: none;
+}
+ .foot-content {
+     color: white;
+     display:grid;
+     grid-template-columns: repeat(4,1fr);
+     grid-gap: 1rem;
+ }
+
+ footer input {
+     display: inline-block;
+     width: 100%;
+     padding: .41rem;
+     margin: 10px 0px;
+ }
+ footer .btn{
+     width: 100%;
+     text-align: center;
+ }
+
+ footer li {
+     padding: 10px 0px;
+     border-bottom: 1px solid #4d4d4d;
+ }
+
+ footer .y-btn {
+     padding: 8px 24px;
+     border-radius: 1px;
+     font-size: 1rem;
+     text-transform: none;
+     margin: 10px 0px;
+ }
+
+ .copy-right {
+     text-align: center;
+     color: white;
+     padding: 1rem;
+     background-color: #444;
+     margin-top: 1.2rem;
+ }
+
+ footer .container {
+     padding: 0px 2rem;
+ }
+
+/*                  media qureris        */
+
+
+@media (max-width:770px){
+    
+    .editor-box1 {
+        grid-template-columns: 1fr;
+        grid-column: 1;
+    }
+    .editor-box7 {
+        
+        grid-template-columns:1fr;
+        grid-column: 1;
+    }
+}
+
+
+ @media (max-width:690px ){
+    .editor-grid {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-gap: 1rem;
+     
+    }
+    .external-link{
+        display: none;
+    }
+    .header-grid  {
+        grid-template-columns: 1fr;
+       
+    }
+    .header-grid .head-logo {
+        
+        text-align: center;
+    }
+    .btn {
+        margin: 10px 0px;
+        padding: 10px;
+    }
+     .foot-content{
+       grid-template-columns: 1fr;
+    }
+    .sports-article  .sport-content{
+        grid-template-columns: 1fr;
+    }
+    .about-grid{
+        grid-template-columns: 1fr;
+    }
+    .read-content{
+        grid-template-columns: 1fr;
+    }
+ }
+
+ @media (max-width:390px) {
+     .about .container {
+         padding: 0rem;
+     }
+ }
+
+ @media (max-width:390px){
+     .about-grid {
+         padding: 0rem;
+     }
+ }
